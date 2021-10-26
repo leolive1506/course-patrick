@@ -1,0 +1,19 @@
+Elevar alguma palavra
+    <sup>curso</sup>
+    
+Deixar abaixo
+    <sub>HTML</sub>
+
+------------------------------------------------------------------------------------------------------------
+
+Aula 3
+ table
+    rowspan - quantas linhas ocupar
+    colspan - quantas colunas ocupar
+    scope - qual tipo (col / row)
+
+-------------------------------------------------------------
+colocar tags dentro de nomes
+    seleciona os elementos
+        ctrl + shift + enter 
+            name tag *

@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+:root {
+    --blue-dark: #05668D;
+    --blue-light: #028090;
+    --green-marine: #00A896;
+    --green: #02C39A
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    background-color: #F0F3BD;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+}
+
+h1 {
+    padding: 10px;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 10px;
+}
+div.container-add-img {
+    width: 100%;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+div.container-add-img::before {
+    content:"";
+    height: 3px;
+    width: 100%;
+    top: 6.7rem;
+    background-color: var(--green-marine);
+    position: absolute;
+}
+div p.title {
+    padding: 10px;
+    height: 100px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 40px;
+    font-weight: 300;
+    transition: .8s;
+    opacity: .6;
+    background-color: var(--green-marine)
+}
+
+div p.title:hover {
+    border: 1px solid var(--blue-light);
+    border: 1px solid var(--blue-light);
+    cursor: pointer;
+    opacity: .8  
+}
+
+
+div p small {
+    
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+div p small img{
+    width: 40px;
+    height: 40px;
+}
+
+main {
+    display: grid;
+    grid-area: main;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+}
+
+img {
+    width: 300px;
+    height: 200px;
+}
+
+.wrapper-modal, .wrapper-modal-err {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.wrapper-modal-err.on,
+.wrapper-modal.on {
+    opacity: 1;
+    visibility: visible;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-modal-err.on {
+    background-color: rgba(0, 0, 0, 0);
+}
+.wrapper-modal-err.on .modal {
+    width: 500px;
+    height: 300px;
+}
+
+.modal, form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+.modal {
+    background-color: white;
+    width: 30%;
+    padding: 40px;
+    position: relative
+}
+
+.modal img {
+    width: 45px;
+    height: 45px;
+    transform: rotate(135deg);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer
+}
+
+form{
+    gap: 2rem;
+    position: relative;
+}
+  
+form input{
+    border: 0;
+    border-bottom: 2px solid lightgrey;
+    outline: none;
+    font-size: 14px;
+    transition: all .3s ease-out;    
+    height: 40px
+}
+
+form input:focus{
+    border-bottom: 2px solid var(--blue-light);
+}
+
+form input::placeholder{
+    color:transparent;
+}
+
+form label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+}
+
+form input:focus + label,
+form input:not(:placeholder-shown) + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: var(--blue-light);
+}
+
+button {
+    width: 100%;
+    border: 1px solid var(--blue-light);
+    color: var(--blue-light);
+    height: 40px;
+    cursor: pointer
+}

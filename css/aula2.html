@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula - 02</title>
+
+    <style>
+        /* herança */
+        div ul li {
+            color: #ff0000;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #7602e2;
+            font-style: italic;
+        }
+
+        h1.titulo-primario {
+            color: #ff0000;
+        }
+
+        h1.titulo-secundario {
+            color: #ff9100
+         }
+        
+        .subtitulo {
+            color: #00a8be;
+        }
+
+        .bla {
+            background-color: red;
+        }
+
+        /* apllicar estilos a ID's */
+        #cabecalho {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 14px;
+        }
+
+        #cabecalho h1 {
+            color: #ff9100;
+        }
+
+        #conteudo {
+            background-color: #ccc;
+        }
+
+        #rodape {
+            background-color: #ffda35;
+        }
+    </style>
+</head>
+<body>
+    <div id="cabecalho">
+        <h1>Nome do site</h1>
+    </div>
+
+    <div id="conteudo">
+        <h1>O que aprendemos hoje?</h1>
+        <ul>
+            <li>Aplicar estilos a tags (aula passada)</li>
+            <li>Aplicar estilos a classes</li>
+            <li>Aplicar estilos a id's</li>
+        </ul>
+
+        <hr>
+
+        <h1 class="titulo-primario">Boa noite galera</h1>
+        <h2 class="subtitulo">Notícia bombástica</h2>
+
+        <p class="subtitulo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, eius.</p>
+
+        <div>
+            <h2>Lista de compras</h2>
+
+            <ul>
+                <li>Coca-cola</li>
+                <li>Doritos</li>
+                <li>Diamante Negro</li>
+            </ul>
+        </div>
+
+        <h2>Lista de desejos</h2>
+        <ul>
+            <li>Comer</li>
+            <li>Dormir</li>
+            <li>Comer De novo</li>
+        </ul>
+    </div>
+
+    <div id="rodape">
+        <h6>Rodapé</h6>
+    </div>
+</body>
+</html>

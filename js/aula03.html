@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Aula 003 JS</h1>
+
+    <button onclick="adicionarTexto()">Click me</button>
+    <button onclick="add()">Add p</button>
+
+    <h2>Add Tarefas</h2>
+    <input type="text" placeholder="Adicionar Tarefas">
+    <button onclick="addTarefas()">Adicionar Tarefas</button>
+
+    <p>Total de Tarefas</p><span></span>
+    <ul>
+
+    </ul>
+
+
+    <script>
+        const body = document.querySelector("body")
+        const ul = document.querySelector("ul")
+        
+        
+        const add = () => {
+            
+            const p = document.createElement("p")
+            p.textContent = "Olá"
+            body.appendChild(p)
+            console.log(p)
+        }
+
+        function adicionarTexto() {
+            let text = document.getElementsByTagName('h1')
+
+            let textH1 = text[0].textContent
+
+            alert(textH1)
+        }
+
+        function addTarefas() {
+            const lis = document.querySelectorAll("li")
+            console.log(lis)
+            if(lis.length >= 5) {
+                return
+            }
+
+            const li = document.createElement("li")
+            li.textContent = document.querySelector("input").value
+
+            ul.appendChild(li)
+            
+            document.querySelector("span").innerText = lis.length + 1
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js 01</title>
+</head>
+<body>
+    <h1>Aula JS 001</h1>
+
+    <button onclick="ele()">Quem é o meu salvador?</button>
+
+    <script>
+
+        function ele() {
+            let nome = "Jesus"
+            alert("meu salvador é " + nome)
+        }
+        (async () => {
+            console.log("Running")     
+        })();
+
+        function mostrarMsg(msg) {
+            alert(msg)
+        }
+
+        let nome = "Leo"
+        let idade = 17
+
+        function apresentacao(nome, idade) {
+            mostrarMsg("Meu nome é " + nome + ", Idade: " + idade)
+        }
+
+        apresentacao(nome, idade)
+
+        function soma(x, y) {
+            let resultado = x + y
+
+            console.log(`A soma de ${x} + ${y} = ${resultado}`)
+        }
+
+        soma(1, 2)
+        
+
+    </script>
+</body>
+</html>

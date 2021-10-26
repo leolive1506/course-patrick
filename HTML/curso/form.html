@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags 3 - Formulário</title>
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1>
+
+    <form action="salvar_usuario.html" method="get">
+        <!-- input texto -->
+        <input type="text" name="nome" placeholder="Digite aqui seu nome completo"> <br><br>
+        <input type="text" name="cidade" placeholder="Digite aqui a cidade que você nasceu"> <br><br>
+
+        <!-- input de  número-->
+        <input type="number" name="idade" placeholder="Digite aqui sua idade"> <br><br>
+
+        <!-- input de data -->
+        <input type="date" name="dtnasc" placeholder="dd/mm/yyyy"> <br><br>
+
+        <!-- input de senha -->
+        <input type="password" name="senha" placeholder="Digite aqui sua senha"> <br><br>
+
+        <!-- texto longo -->
+        <textarea name="historia" cols="30" rows="10" placeholder="Digite aqui sua história"></textarea> <br><br>
+
+        <!-- input imagem ou arquivo -->
+        <input type="file" name="foto">
+
+        <!-- botões -->
+        <button type="reset">Cancelar</button>
+        <button type="button">Botão normal</button>
+        <button type="submit">Botão para enviar o formulário</button>
+    </form>
+</body>
+</html>
